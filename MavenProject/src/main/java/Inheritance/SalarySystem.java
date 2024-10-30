@@ -1,11 +1,21 @@
 package Inheritance;
+
+import java.util.Scanner;
+
 public class SalarySystem {
-	int basic=50000,ded=2000,bonus=5000;
+	int basic,bonus,ded;
 	public void details()
 	{
-		System.out.println("The basic salary :"+basic);
-		System.out.println("The deduction is :"+ded);
-		System.out.println("The bonus is :"+bonus);
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter he basic salary :");
+		int a=s.nextInt();
+		System.out.println("The deduction is :");
+		int b=s.nextInt();
+		System.out.println("The bonus is :");
+		int c=s.nextInt();
+		basic=a;
+		bonus=c;
+		ded=b;
 	}
 
 }
